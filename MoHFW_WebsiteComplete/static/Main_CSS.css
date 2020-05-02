@@ -1,0 +1,505 @@
+::selection{
+	color: rgb(200, 0, 100); /*Selected Text color.*/
+	background-color: rgba(100, 100, 100, 0); /*Selected text background.*/
+}
+
+a{
+	cursor: pointer;
+	text-decoration: none;
+	font-variant: small-caps;
+	border: none;
+	outline: none;
+	transition: color 1.2s;
+	color: rgb(0, 0, 0);
+}
+
+a:link{
+	cursor: pointer;
+	transition: color 1.2s;
+	color: rgb(0, 0, 0);
+}
+
+a:visited{
+	cursor: pointer;
+	transition: color 1.2s;
+	color: rgb(80, 80, 80);
+}
+
+a:hover{
+	cursor: pointer;
+	transition: color 1.2s;
+	color: rgb(85, 185, 55);
+}
+
+a:active{
+	cursor: progress;
+	transition: color 1.4s;
+	color: rgb(88, 84, 208);
+}
+
+#Main_Page{
+	position: absolute; /*Position wrt browser window.*/
+	width: auto; /*Complete width with no H-Scrolling.*/
+	/*min-height: 200%; Auto height wrt content.*/
+	top: 0px; /*Distance from-top.*/
+	right: 0px; /*Distance from-right.*/
+	bottom: 0px; /*Distance from-bottom.*/
+	left: 0px; /*Distance from-left.*/
+	display: block; /*One complete block covering whole window.*/
+	margin: 0px 0px 0px 0px; /*top right bottom left*/
+	border: medium hidden rgb(255, 255, 255); /*width style color*/
+	border-radius: 0px 0px 0px 0px; /*top-left top-right bottom-right bottom-left*/
+	background-color:rgba(255, 255, 255, 1); /*Background color*/
+	overflow: hidden;
+}
+
+#Sticky_NavBar_Bar{
+	position: sticky; /*Sticky NavBar.*/
+/*	min-height: 40px; /*Min navbar height.*/
+/*	max-height: 200px; /*Max navbar height.*/
+   width: 99.6%;
+	height: 16%; /*Fixed navbar height.*/
+	top: 0px; /*Distance from-top.*/
+	margin: 0px 0px 0px 0px; /*top right bottom left*/
+	border: none; /*No border required*/
+	padding: 4px 2px 2px 4px; /*top right bottom left*/
+	border-radius: 2px 2px 16px 16px; /*top-left top-right bottom-right bottom-left*/
+	z-index: 6; /*Position of DOM Element - higher the forward.*/
+	background-color: rgba(255, 255, 255, 1); /*Background color*/
+   overflow: hidden;
+}
+
+#Strip1{
+   width: 99.4%;
+   top: 0px;
+   height: 20px;
+}
+
+#IndiaLogo{
+   width: 5%;
+	size: cover; /*Fit to box.*/
+   padding-left: 1.4%;
+   justify-content: right;
+   overflow: hidden;
+}
+
+#IndiaLogo img{
+   position: relative;
+   height: 5%;
+   width: 60%;
+   cursor: pointer;
+	overflow: hidden;/*Hide any overflowing element.*/
+	size: cover; /*Fit to box.*/
+}
+
+#BlankStrip1_1{
+   width: 72%;
+}
+
+#DaySwitch{
+   /*width: 2%;*/
+   width: 1px;
+   cursor: pointer;
+   size: cover;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+#NightSwitch{
+   /*width: 2%;*/
+   width: 1px;
+   cursor: pointer;
+   size: cover;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+#DaySwitch img{
+   position: relative;
+   width: 16px;
+   height: 16px;
+   /*height: 3%;
+   width: 60%;*/
+	overflow: hidden;/*Hide any overflowing element.*/
+	size: cover; /*Fit to box.*/
+   pointer-events: auto;
+   background-color: rgba(255, 255, 255, 1);
+}
+
+#NightSwitch img{
+   position: relative;
+   width: 16px;
+   height: 16px;
+   /*height: 3%;
+   width: 60%;*/
+	overflow: hidden;/*Hide any overflowing element.*/
+	size: cover; /*Fit to box.*/
+   pointer-events: auto;
+   background-color: rgba(255, 255, 255, 1);
+}
+
+#BlankStrip1_2{
+   width: 11%;
+}
+
+#Strip2{
+   width: 99.4%;
+   height: 54%;
+   justify-content: center;
+	font-variant: small-caps;
+   text-align: center;
+}
+
+#HomeImage{
+   width: 10%;
+	size: cover; /*Fit to box.*/
+   justify-content: right;
+   overflow: hidden;
+}
+
+#HomeImage img{
+   position: relative;
+   height: 5%;
+   width: 28%;
+	overflow: hidden;/*Hide any overflowing element.*/
+	size: cover; /*Fit to box.*/
+}
+
+#HomeText{
+   text-align: left;
+   justify-content: left;
+   vertical-align: middle;
+   width: 26%;
+}
+
+#BlankStrip2_1{
+   width: 30%;
+}
+
+#HomeTab{
+   background-color: rgba(255, 255, 255, 1);
+}
+
+#HomeTabS{
+   width: 4%;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+#HomeTabSBox{
+   position: relative;
+   padding: 1px 2px 1px 2px;
+   height: 46%;
+   width: auto;
+   cursor: pointer;
+   border-radius: 4px;
+   pointer-events: auto;
+   background-color: rgba(0, 200, 100, 1);
+}
+
+#CommunityTabS{
+   width: 8%;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+#CommunityTabSBox{
+   position: relative;
+   padding: 1px 2px 1px 2px;
+   height: 46%;
+   width: auto;
+   cursor: pointer;
+   border-radius: 4px;
+   pointer-events: auto;
+   background-color: rgba(0, 200, 100, 1);
+}
+
+#LatestUpdatesTabS{
+   width: 8%;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+#LatestUpdatesTabSBox{
+   position: relative;
+   padding: 1px 2px 1px 2px;
+   height: 46%;
+   width: auto;
+   cursor: pointer;
+   border-radius: 4px;
+   pointer-events: auto;
+   background-color: rgba(0, 200, 100, 1);
+}
+
+#FAQsTabS{
+   width: 4%;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+#FAQsTabSBox{
+   position: relative;
+   padding: 1px 2px 1px 2px;
+   height: 46%;
+   width: auto;
+   cursor: pointer;
+   border-radius: 4px;
+   pointer-events: auto;
+   background-color: rgba(0, 200, 100, 1);
+}
+
+#LoginTabS{
+   width: 10%;
+   overflow: hidden;
+   pointer-events: none;
+}
+
+#LoginTabSBox{
+   position: relative;
+   padding: 8px 4px 8px 4px;
+   height: 66%;
+   width: 50%;
+   cursor: pointer;
+   border-radius: 4px;
+   pointer-events: auto;
+   background-color: rgba(0, 200, 100, 1);
+}
+
+#Strip2 tr td a, #StripP1_1 td a{
+	color: rgb(0, 0, 0);
+}
+
+#Strip2 tr td a:link, #StripP1_1 td a:link{
+	color: rgb(0, 0, 0);
+}
+
+#Strip2 tr td a:visited, #StripP1_1 td a:visited{
+	color: rgb(0, 0, 0);
+}
+
+#Strip2 tr td a:hover, #StripP1_1 td a:hover{
+	color: rgb(0, 0, 0);
+}
+
+#Strip2 tr td a:active, #StripP1_1 td a:active{
+	color: rgb(0, 0, 0);
+}
+
+#Strip3{
+   width: 99.4%;
+   bottom: 0px;
+   height: 20px;
+   justify-content: center;
+   text-align: center;
+	border-radius: 1px 1px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 0, 0, 0.4) 10%, rgba(255, 0, 0, 0.6) 20%, rgba(255, 0, 0, 0.6) 25%, rgba(255, 0, 0, 1) 50%, rgba(255, 0, 0, 0.6) 75%, rgba(255, 0, 0, 0.6) 80%, rgba(255, 0, 0, 0.4) 90%, rgba(255, 255, 255, 0) 100%);
+}
+
+#BlankStrip3_1{
+   width: 20%;
+}
+
+#BlankStrip3_2{
+   width: 20%;
+}
+
+#StripsP1{
+   position: relative;
+   width: 100%;
+   background-color: rgba(255, 255, 255, 1);
+}
+
+#StripP1_1{
+   width: 100%;
+   top: 0px;
+   height: 22px;
+   justify-content: center;
+   text-align: center;
+   vertical-align: middle;
+}
+
+.PL{
+   width: 20%;
+   padding: 4px 2px 4px 2px;
+}
+
+.PL div{
+   position: relative;
+   cursor: pointer;
+   padding: 2px 1px 2px 1px;
+   border-radius: 6px;
+}
+
+#TravelAdviceS{
+   width: 38%;
+   background-color: rgb(0, 255, 0);
+}
+
+#StrategiesS{
+   width: 30%;
+   background-color: rgb(0, 255, 0);
+}
+
+#MythbustersS{
+   width: 40%;
+   background-color: rgb(0, 255, 0);
+}
+
+#GlobalResearchS{
+   width: 48%;
+   background-color: rgb(0, 255, 0);
+}
+
+#MediaResourcesS{
+   width: 48%;
+   background-color: rgb(0, 255, 0);
+}
+
+#StripsP2{
+   position: relative;
+   width: 100%;
+   background-color: rgba(255, 255, 255, 1);
+}
+
+#StripP2_1{
+   width: 100%;
+   top: 0px;
+   height: 120px;
+   justify-content: center;
+   text-align: center;
+   vertical-align: bottom;
+}
+
+#UpdateDetails{
+   width: 30%;
+   padding: 2px 8px 2px 20px;
+   text-align: left;
+   vertical-align: middle;
+}
+
+#ActiveCases{
+   width: 10%;
+   padding: 2px 8px 16px 8px;
+	border-radius: 8px 8px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(100, 200, 255, 0.3) 25%, rgba(100, 200, 255, 0.5) 50%, rgba(100, 200, 255, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+#CuredCases{
+   width: 10%;
+   padding: 2px 8px 16px 8px;
+	border-radius: 8px 8px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(100, 255, 50, 0.3) 25%, rgba(100, 255, 50, 0.5) 50%, rgba(100, 255, 50, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+#DeathCases{
+   width: 10%;
+   padding: 2px 8px 16px 8px;
+	border-radius: 8px 8px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 50, 0, 0.3) 25%, rgba(255, 50, 0, 0.5) 50%, rgba(255, 50, 0, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+#MigratedCases{
+   width: 10%;
+   padding: 2px 8px 16px 8px;
+	border-radius: 8px 8px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 150, 0, 0.3) 25%, rgba(255, 150, 0, 0.5) 50%, rgba(255, 150, 0, 0.3) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+#GeneralDetails{
+   width: 12%;
+   text-align: center;
+   vertical-align: middle;
+   padding: 2px 8px 2px 8px;
+	border-radius: 8px 8px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background: linear-gradient(90deg, rgba(80, 80, 80, 0) 0%, rgba(80, 80, 80, 0.2) 15%, rgba(200, 200, 200, 0.3) 20%, rgba(200, 200, 200, 0.5) 50%, rgba(80, 0, 0, 0.3) 80%, rgba(80, 80, 80, 0.2) 85%, rgba(80, 80, 80, 0) 100%);
+}
+
+#ScientificDetails{
+   width: 12%;
+   text-align: center;
+   vertical-align: middle;
+   padding: 2px 8px 2px 8px;
+	border-radius: 8px 8px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background: linear-gradient(90deg, rgba(80, 80, 80, 0) 0%, rgba(80, 80, 80, 0.2) 15%, rgba(200, 200, 200, 0.3) 20%, rgba(200, 200, 200, 0.5) 50%, rgba(80, 0, 0, 0.3) 80%, rgba(80, 80, 80, 0.2) 85%, rgba(80, 80, 80, 0) 100%);
+}
+
+#Main_Body{
+	position: relative; /*Position wrt browser window.*/
+	width: auto; /*Complete width with no H-Scrolling.*/
+	/*min-height: 200%; Auto height wrt content.*/
+   height: 84%;
+	top: 0px; /*Distance from-top.*/
+	right: 0px; /*Distance from-right.*/
+	bottom: 0px; /*Distance from-bottom.*/
+	left: 0px; /*Distance from-left.*/
+	display: block; /*One complete block covering whole window.*/
+	margin: 0px 0px 0px 0px; /*top right bottom left*/
+	border: medium hidden rgb(255, 255, 255); /*width style color*/
+	border-radius: 4px 4px 8px 8px; /*top-left top-right bottom-right bottom-left*/
+	background-color:rgba(255, 255, 255, 1); /*Background color*/
+	overflow: auto;
+}
+
+.MainBody_Content{
+	position: static; /*Position wrt browser window.*/
+	width: auto; /*Complete width with no H-Scrolling.*/
+	height: auto; /*Auto height wrt content.*/
+	right: 0px; /*Distance from-right.*/
+	left: 0px; /*Distance from-left.*/
+	display: block; /*One complete block covering required height.*/
+	background-color:rgba(255, 255, 225, 1); /*Background color*/
+}
+
+.SL1{
+   position: relative;
+   text-align: left;
+   height: auto;
+   width: auto;
+   padding-left: 4%;
+   word-wrap: break-word;
+   background-color: rgba(255, 255, 255, 1);
+   overflow: hidden;
+}
+
+.SL1 div{
+   width: 86%;
+   height: auto;
+   max-height: 400px;
+   padding-left: 4%;
+   padding-right: 4%;
+   overflow: auto;
+}
+
+#FAQsTab{
+   padding-left: 8%;
+   padding-right: 8%;
+   word-wrap: break-word;
+   background-color: rgba(255, 255, 255, 1);
+}
+
+.SL1 table{
+   position: relative;
+   width: 86%;
+   height: 400px;
+   padding-left: 4%;
+   padding-right: 4%;
+   overflow: auto;
+   border-radius: 16px;
+}
+
+#Stories{
+   overflow: auto;
+}
+
+#FooterBody{
+   font-variant: small-caps;
+   height: 60px;
+   padding-top: 12px;
+   padding-left: 8%;
+   padding-right: 8%;
+   word-wrap: break-word;
+   border-radius: 2px 2px 16px 16px;
+   background-color: rgba(25, 25, 25, 1);
+   color: rgb(255, 255, 255);
+   
+}
